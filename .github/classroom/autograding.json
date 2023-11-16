@@ -81,6 +81,7 @@
         "sqlite3",
         "create table"
       ],
+      "type": "sqlite3",
       "run": "SELECT EXISTS (SELECT 1 FROM Benutzer WHERE (vorname = 'Lilli' AND nachname = 'Dampf-Wolke' AND email = 'lilli@wolke.de') AND (vorname = 'Hans' AND nachname = 'Dampf-Wolke' AND email = 'hans@dampf.de')) AS entry_exists;",
       "file": "",
       "output": "1",
