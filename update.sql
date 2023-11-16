@@ -24,4 +24,4 @@ VALUES
   ('Tom', 'Miller', 'tom@miller.de', 22);
 
 
-SELECT * FROM Benutzer:
+SELECT * FROM Benutzer;
