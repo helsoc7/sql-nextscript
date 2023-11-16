@@ -61,10 +61,9 @@
       ],
       "type": "sqlite3",
       "dbName": "temporary.db",
-      "runs": "SELECT EXISTS (SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'Benutzer') AS table_exists, EXISTS (SELECT 1 FROM pragma_table_info('Benutzer') WHERE name = 'vorname' AND type = 'VARCHAR(255)') AS vorname_exists, EXISTS (SELECT 1 FROM pragma_table_info('Benutzer') WHERE name = 'nachname' AND type = 'VARCHAR(255)') AS nachname_exists, EXISTS (SELECT 1 FROM pragma_table_info('Benutzer') WHERE name = 'alter' AND type = 'INT') AS alter_exists;",
+      "run": "SELECT EXISTS (SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'Benutzer') AS table_exists, EXISTS (SELECT 1 FROM pragma_table_info('Benutzer') WHERE name = 'vorname' AND type = 'VARCHAR(255)') AS vorname_exists, EXISTS (SELECT 1 FROM pragma_table_info('Benutzer') WHERE name = 'nachname' AND type = 'VARCHAR(255)') AS nachname_exists, EXISTS (SELECT 1 FROM pragma_table_info('Benutzer') WHERE name = 'alter' AND type = 'INT') AS alter_exists;",
       "file": "update.sql",
-      "run": "",
-      "output": "1|1|1|1",
+      "output": "1|1|1|1|1",
       "comparison": "exact",
       "points": 5,
       "timeout": 20
