@@ -69,7 +69,7 @@
       "comparison": "exact",
       "points": 5,
       "timeout": 20
-    }
+    },
     {
       "specs": {
         "title": "Editiere update.sql. Wir wissen, dass Hans 31 Jahre alt ist"
