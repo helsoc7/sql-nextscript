@@ -1,0 +1,2 @@
+ALTER TABLE Benutzer
+ADD COLUMN age INT;
