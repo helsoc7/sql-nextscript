@@ -1,9 +1,9 @@
-ALTER TABLE Benutzer
-ADD COLUMN alter INT;
-
 UPDATE Benutzer
 SET nachname = 'Dampf-Wolke'
 WHERE vorname = 'Hans' AND nachname = 'Dampf' AND email = 'hans@dampf.de';
+
+ALTER TABLE Benutzer
+ADD COLUMN alter INT;
 
 UPDATE Benutzer
 SET nachname = 'Dampf-Wolke'
