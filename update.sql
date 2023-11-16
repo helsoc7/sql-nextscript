@@ -23,5 +23,3 @@ VALUES
   ('Anna', 'Schmidt', 'anna@schmidt.de', 30),
   ('Tom', 'Miller', 'tom@miller.de', 22);
 
-
-SELECT * FROM Benutzer;
