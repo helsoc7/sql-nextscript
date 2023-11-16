@@ -48,9 +48,9 @@
     },
     {
       "specs": {
-        "title": "Editiere update.sql und füge in der Tabelle Benutzer ein Feld alter des Typs INT hinzu"
+        "title": "Editiere update.sql und füge in der Tabelle Benutzer ein Feld age des Typs INT hinzu"
       },
-      "name": "update the table benutzer with new field alter of type int ",
+      "name": "update the table benutzer with new field age of type int ",
       "feedback": "Could not find a table matching the requirements. Please check the script",
       "urls": [
         "https://www.w3schools.com/sql/sql_create_table.asp"
@@ -61,7 +61,7 @@
       ],
       "type": "sqlite3",
       "dbName": "temporary.db",
-      "run": "SELECT EXISTS (SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'Benutzer') AS table_exists, EXISTS (SELECT 1 FROM pragma_table_info('Benutzer') WHERE name = 'vorname' AND type = 'VARCHAR(255)') AS vorname_exists, EXISTS (SELECT 1 FROM pragma_table_info('Benutzer') WHERE name = 'nachname' AND type = 'VARCHAR(255)') AS nachname_exists, EXISTS (SELECT 1 FROM pragma_table_info('Benutzer') WHERE name = 'age' AND type = 'INT') AS alter_exists;",
+      "run": "SELECT EXISTS (SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'Benutzer') AS table_exists, EXISTS (SELECT 1 FROM pragma_table_info('Benutzer') WHERE name = 'vorname' AND type = 'VARCHAR(255)') AS vorname_exists, EXISTS (SELECT 1 FROM pragma_table_info('Benutzer') WHERE name = 'nachname' AND type = 'VARCHAR(255)') AS nachname_exists, EXISTS (SELECT 1 FROM pragma_table_info('Benutzer') WHERE name = 'age' AND type = 'INT') AS age_exists;",
       "file": "update.sql",
       "output": "1|1|1|1",
       "comparison": "exact",
@@ -82,6 +82,7 @@
         "create table"
       ],
       "type": "sqlite3",
+      "dbName": "temporary.db",
       "run": "SELECT EXISTS (SELECT 1 FROM Benutzer WHERE (vorname = 'Lilli' AND nachname = 'Dampf-Wolke' AND email = 'lilli@wolke.de') AND (vorname = 'Hans' AND nachname = 'Dampf-Wolke' AND email = 'hans@dampf.de')) AS entry_exists;",
       "file": "",
       "output": "1",
@@ -93,7 +94,7 @@
       "specs": {
         "title": "Editiere update.sql. Wir wissen, dass Hans 31 Jahre alt ist"
       },
-      "name": "checking for 'Hans' and his 'alter' entries in table",
+      "name": "checking for 'Hans' and his 'age' entries in table",
       "feedback": "Could not find an entry matching the requirements. Please check the script",
       "urls": [
         "https://www.cyberciti.biz/faq/hello-world-bash-shell-script/"
@@ -103,7 +104,8 @@
         "create table"
       ],
       "type": "sqlite3",
-      "run": "SELECT EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Hans' AND nachname = 'Dampf-Wolke' AND email = 'hans@dampf.de' AND alter=31) AS entry_exists;",
+      "dbName": "temporary.db",
+      "run": "SELECT EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Hans' AND nachname = 'Dampf-Wolke' AND email = 'hans@dampf.de' AND age=31) AS entry_exists;",
       "file": "",
       "output": "1",
       "comparison": "exact",
@@ -114,7 +116,7 @@
       "specs": {
         "title": "Passe die update.sql so an, dass Lilli ein Alter von 28 Jahren eingetragen bekommt."
       },
-      "name": "checking for 'Lilli' and his 'alter' entries in table",
+      "name": "checking for 'Lilli' and his 'age' entries in table",
       "feedback": "Could not find an entry matching the requirements. Please check the script",
       "urls": [
         "https://www.cyberciti.biz/faq/hello-world-bash-shell-script/"
@@ -124,7 +126,8 @@
         "create table"
       ],
       "type": "sqlite3",
-      "run": "SELECT EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Lilli' AND nachname = 'Dampf-Wolke' AND email = 'lilli@wolke.de' AND alter=28) AS entry_exists;",
+      "dbName": "temporary.db",
+      "run": "SELECT EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Lilli' AND nachname = 'Dampf-Wolke' AND email = 'lilli@wolke.de' AND age=28) AS entry_exists;",
       "file": "",
       "output": "1",
       "comparison": "exact",
@@ -150,7 +153,8 @@
         "create table"
       ],
       "type": "sqlite3",
-      "run": "SELECT EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Max' AND nachname = 'Mustermann' AND email = 'max@mustermann.de' AND alter = 25) AND EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Anna' AND nachname = 'Schmidt' AND email = 'anna@schmidt.de' AND alter = 30) AND EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Tom' AND nachname = 'Miller' AND email = 'tom@miller.com' AND alter = 22) AS entries_exist;",
+      "dbName": "temporary.db",
+      "run": "SELECT EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Max' AND nachname = 'Mustermann' AND email = 'max@mustermann.de' AND age = 25) AND EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Anna' AND nachname = 'Schmidt' AND email = 'anna@schmidt.de' AND age = 30) AND EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Tom' AND nachname = 'Miller' AND email = 'tom@miller.com' AND age = 22) AS entries_exist;",
       "file": "",
       "output": "1",
       "comparison": "exact",
