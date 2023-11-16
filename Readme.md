@@ -11,7 +11,7 @@ In dieser ersten kleinen Mini SQL-Aufgabe erstellt ihr ein SQL-Skript für SQLit
 * 15 Minuten (Viel Erfolg!)
 
 ---
-<p><span style='color:red;'><b>WICHTIG</b>: Committet/Pusht eure Lösung bitte nicht in den .github-Ordner.<br/> <b>ACHTUNG</b>: Die Badges unten werden nicht genauso schnell aktualisiert wie die Pipeline (Actions)<br/>Für Übersetzungen der Aufgabe in eine andere Sprache: https://translate.google.de <br/></span> </p>
+<p><span style='color:red;'><b>Info</b>: Bei dieser Aufgabe handelt es sich um eine Gruppenaufgabe, Ihr solltet also miteinander zusammen arbeiten und Euch die Arbeit dabei sinnvoll aufteilen.Denkt daran, git fetch/pull bzw. pull --rebase zu benutzen falls Ihr gleichzeitig Veränderungen an denselben Dateien vornehmt, um merge-Konflikte zu reduzieren!<br/><b>WICHTIG</b>: Committet/Pusht eure Lösung bitte nicht in den .github-Ordner.<br/> <b>ACHTUNG</b>: Die Badges unten werden nicht genauso schnell aktualisiert wie die Pipeline (Actions)<br/>Für Übersetzungen der Aufgabe in eine andere Sprache: https://translate.google.de <br/></span> </p>
 
 ---
 <ol>
@@ -31,7 +31,7 @@ Hilfe:
 ---
 
 [![Test Status](../../blob/badges/.github/badges/testStatus_3.svg)](../../actions)  
-<li> Editiere update.sql und füge in der Tabelle Benutzer ein Feld alter des Typs INT hinzu (5 Punkte)</li>
+<li> Editiere update.sql und füge in der Tabelle Benutzer ein Feld age des Typs INT hinzu (5 Punkte)</li>
 Hilfe: 
 <ul><li><a href="https://www.w3schools.com/sql/sql_create_table.asp">Spickzettel</a></li></ul> 
 
