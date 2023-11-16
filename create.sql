@@ -9,5 +9,7 @@ INSERT INTO Benutzer (vorname, nachname, email) VALUES ('Hans', 'Dampf', 'hans@d
 
 INSERT INTO Benutzer (vorname, nachname, email) VALUES ('Lilli', 'Wolke', 'lilli@wolke.de');
 
+SELECT * FROM Benutzer;
+
 
 
