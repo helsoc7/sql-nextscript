@@ -154,7 +154,8 @@
       ],
       "type": "sqlite3",
       "dbName": "temporary.db",
-      "run": "SELECT EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Max' AND nachname = 'Mustermann' AND email = 'max@mustermann.de' AND age = 25) AND EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Anna' AND nachname = 'Schmidt' AND email = 'anna@schmidt.de' AND age = 30) AND EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Tom' AND nachname = 'Miller' AND email = 'tom@miller.com' AND age = 22) AS entries_exist;",
+      "run": "SELECT EXISTS (SELECT 1 FROM Benutzer AS b INNER JOIN (SELECT 'Max' AS vorname, 'Mustermann' AS nachname, 'max@mustermann.de' AS email, 25 AS age UNION SELECT 'Anna', 'Schmidt', 'anna@schmidt.de', 30 UNION SELECT 'Tom', 'Miller', 'tom@miller.de', 22) AS conditions ON b.vorname = conditions.vorname AND b.nachname = conditions.nachname AND b.email = conditions.email AND b.alter = conditions.age) AS entries_exist;
+",
       "file": "",
       "output": "1",
       "comparison": "exact",
