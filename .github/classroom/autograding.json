@@ -102,6 +102,7 @@
         "sqlite3",
         "create table"
       ],
+      "type": "sqlite3",
       "run": "SELECT EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Hans' AND nachname = 'Dampf-Wolke' AND email = 'hans@dampf.de' AND alter=31) AS entry_exists;",
       "file": "",
       "output": "1",
@@ -122,6 +123,7 @@
         "sqlite3",
         "create table"
       ],
+      "type": "sqlite3",
       "run": "SELECT EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Lilli' AND nachname = 'Dampf-Wolke' AND email = 'lilli@wolke.de' AND alter=28) AS entry_exists;",
       "file": "",
       "output": "1",
@@ -147,6 +149,7 @@
         "sqlite3",
         "create table"
       ],
+      "type": "sqlite3",
       "run": "SELECT EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Max' AND nachname = 'Mustermann' AND email = 'max@mustermann.de' AND alter = 25) AND EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Anna' AND nachname = 'Schmidt' AND email = 'anna@schmidt.de' AND alter = 30) AND EXISTS (SELECT 1 FROM Benutzer WHERE vorname = 'Tom' AND nachname = 'Miller' AND email = 'tom@miller.com' AND alter = 22) AS entries_exist;",
       "file": "",
       "output": "1",
