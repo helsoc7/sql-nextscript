@@ -1,7 +1,7 @@
 {
   "repo": "helsoc7/sql-nextscript",
   "type": "group",
-  "introduction": "In dieser ersten kleinen Mini SQL-Aufgabe erstellt ihr ein SQL-Skript für SQLite, das eine Tabelle mit zwei Spalten erstellen soll. \n Folgt bitte genau den Anweisungen. Unter Hilfe findet ihr Links, die mit dem Wort Spickzettel markiert sind. Benutzt diese bei Bedarf, falls ihr nicht weiterkommt. \n",
+  "introduction": "In dieser kleinen Mini SQL-Aufgabe erstellt ihr ein SQL-Skript für eine SQLite Datenbank (wird automatisch für Euch erstellt), das eine Tabelle mit zwei Spalten erstellen soll. \n Folgt bitte genau den Anweisungen. Unter Hilfe findet ihr Links, die mit dem Wort Spickzettel markiert sind. Benutzt diese bei Bedarf, falls ihr nicht weiterkommt. \n",
   "logo_url": "https://3.bp.blogspot.com/-VdxnwsQC46k/WUE-wWtj3VI/AAAAAAAAbbE/EsX2rnx6sRkz6AZ3ojgSrSsvKubbyjyQwCLcBGAs/s1600/Sqlite.jpg",
   "timeframe": "15 Minuten (Viel Erfolg!)",
   "tests": [
@@ -49,16 +49,17 @@
     },
     {
       "specs": {
-        "title": "Editiere update.sql und füge in der Tabelle Benutzer ein Feld age des Typs INT hinzu"
+        "title": "Editiere update.sql und füge in der Tabelle Benutzer ein neues Feld (Spalte) 'age' des Typs INT hinzu"
       },
-      "name": "update the table benutzer with new field age of type int ",
+      "name": "alter the table benutzer with new field age of type int ",
       "feedback": "Could not find a table matching the requirements. Please check the script",
       "urls": [
-        "https://www.w3schools.com/sql/sql_create_table.asp"
+        "https://www.w3schools.com/SQl/sql_alter.asp",
+        "https://sqlite.org/lang_altertable.html"
       ],
       "keywords": [
         "sqlite3",
-        "create table"
+        "alter table"
       ],
       "type": "sqlite3",
       "dbName": "temporary.db",
@@ -76,11 +77,13 @@
       "name": "checking for Hans and Lillys names as they are now married",
       "feedback": "Could not find an entry matching the requirements. Please check the script",
       "urls": [
-        "https://www.cyberciti.biz/faq/hello-world-bash-shell-script/"
+        "https://www.w3schools.com/SQL/sql_update.asp",
+        "https://www.sqlite.org/lang_update.html",
+        "https://www.sqlitetutorial.net/sqlite-update/"
       ],
       "keywords": [
         "sqlite3",
-        "create table"
+        "update table"
       ],
       "type": "sqlite3",
       "dbName": "temporary.db",
@@ -98,11 +101,14 @@
       "name": "checking for 'Hans' and his 'age' entries in table",
       "feedback": "Could not find an entry matching the requirements. Please check the script",
       "urls": [
-        "https://www.cyberciti.biz/faq/hello-world-bash-shell-script/"
+        "https://www.w3schools.com/SQl/sql_where.asp",
+        "https://sqldocs.org/sqlite/sqlite-where-clause/",
+        "https://www.sqlitetutorial.net/sqlite-where/#:~:text=When%20evaluating%20a%20SELECT%20statement%20with%20a%20WHERE,previous%20step%20with%20columns%20in%20the%20SELECT%20clause."
       ],
       "keywords": [
         "sqlite3",
-        "create table"
+        "update",
+        "where"
       ],
       "type": "sqlite3",
       "dbName": "temporary.db",
@@ -120,11 +126,11 @@
       "name": "checking for 'Lilli' and his 'age' entries in table",
       "feedback": "Could not find an entry matching the requirements. Please check the script",
       "urls": [
-        "https://www.cyberciti.biz/faq/hello-world-bash-shell-script/"
+        "https://sqldocs.org/sqlite/sqlite-where-clause/"
       ],
       "keywords": [
         "sqlite3",
-        "create table"
+        "update where"
       ],
       "type": "sqlite3",
       "dbName": "temporary.db",
@@ -147,11 +153,13 @@
       "name": "checking for new benutzer entries",
       "feedback": "Could not find an entry matching the requirements. Please check the script",
       "urls": [
-        "https://www.cyberciti.biz/faq/hello-world-bash-shell-script/"
+        "https://www.w3schools.com/sql/sql_insert.asp",
+        "https://www.sqlite.org/lang_insert.html",
+        "https://www.sqlitetutorial.net/sqlite-insert/"
       ],
       "keywords": [
         "sqlite3",
-        "create table"
+        "insert into"
       ],
       "type": "sqlite3",
       "dbName": "temporary.db",
