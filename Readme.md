@@ -4,14 +4,14 @@
 # Aufgabe
 [![GitHub Classroom Workflow](https://github.com/helsoc7/sql-update/actions/workflows/classroom.yml/badge.svg)](https://github.com/helsoc7/sql-update/actions/workflows/classroom.yml) [![Points badge](../../blob/badges/.github/badges/points.svg)](../../actions) 
 
-In dieser kleinen Mini SQL-Aufgabe erstellt ihr ein SQL-Skript für eine SQLite Datenbank (wird automatisch für Euch erstellt), das eine Tabelle mit zwei Spalten erstellen soll. 
+In dieser kleinen SQL-Aufgabe erstellt ihr ein SQL-Skript für eine SQLite Datenbank (wird automatisch für Euch erstellt), das eine Tabelle mit zwei Spalten erstellen soll. 
  Folgt bitte genau den Anweisungen. Unter Hilfe findet ihr Links, die mit dem Wort Spickzettel markiert sind. Benutzt diese bei Bedarf, falls ihr nicht weiterkommt. 
 
 * 35 Punkte
 * 15 Minuten (Viel Erfolg!)
 
 ---
-<p><span style='color:red;'><b>WICHTIG</b>: Committet/Pusht eure Lösung bitte nicht in den .github-Ordner.<br/> <b>ACHTUNG</b>: Die Badges unten werden nicht genauso schnell aktualisiert wie die Pipeline (Actions)<br/>Für Übersetzungen der Aufgabe in eine andere Sprache: https://translate.google.de <br/></span> </p>
+<p><span style='color:red;'><b>WICHTIG</b>: Committet/Pusht eure Lösung bitte nicht in den .github-Ordner.<br/> <b>ACHTUNG</b>: Die Badges unten werden nicht genauso schnell aktualisiert wie die Pipeline (Actions)<br/><b>Tipp</b>: Der TA-Bot kann Euch am Besten helfen, wenn Ihr regelmäßige kleine Commits pusht-um einen Blick auf Euren Stand zu pushen (es ist völlig normal, alle 5 Minuten zu pushen).<br/>Für Übersetzungen der Aufgabe in eine andere Sprache: https://translate.google.de <br/></span> </p>
 
 ---
 <ol>
